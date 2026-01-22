@@ -20,7 +20,7 @@ export default function App() {
     setLoading(true);
     setHasInteracted(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/ask", {
+      const res = await axios.post("https://dsa-instructor-ai-bot-backend.onrender.com/api/ask", {
         question: q,
       });
       setAnswer(res.data.answer);
