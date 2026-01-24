@@ -21,7 +21,7 @@ export default function App() {
     setHasInteracted(true);
     try {
       // http://localhost:5000/  https://dsa-instructor-ai-bot-backend.onrender.com/api/ask
-      const res = await axios.post("https://dsa-instructor-ai-bot-backend.onrender.com/api/ask ", {
+      const res = await axios.post("https://dsa-instructor-ai-bot-server.onrender.com/api/ask ", {
         question: q,
       });
       setAnswer(res.data.answer);
